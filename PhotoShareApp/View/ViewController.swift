@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func logIn(_ sender: Any) {
-        
         if emailText.text != "" && passwordText.text != "" {
             Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { authDataResult, error in
                 if error != nil{

@@ -24,7 +24,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4a5-pT-KXc">
                                 <rect key="frame" x="57" y="355" width="283" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwo-Xz-BQE">
                                 <rect key="frame" x="85" y="428" width="85" height="44"/>
@@ -80,14 +80,64 @@
                     <view key="view" contentMode="scaleToFill" id="4Fc-lC-cJP" customClass="Up">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tee-L9-3zX">
+                                <rect key="frame" x="76" y="167" width="263" height="159"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSf-Dh-XKS">
+                                <rect key="frame" x="76" y="400" width="263" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TEh-PI-jY0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYf-b2-LH9">
+                                <rect key="frame" x="147" y="481" width="127" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="dEI-mn-Zdp"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Upload">
+                                    <attributedString key="attributedSubtitle"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="upload:" destination="rl4-XQ-ple" eventType="touchUpInside" id="jhU-39-Woq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNo-pt-8Gh">
+                                <rect key="frame" x="76" y="400" width="263" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oq3-53-7Zx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tee-L9-3zX" firstAttribute="leading" secondItem="Oq3-53-7Zx" secondAttribute="leading" constant="76" id="9Fc-h0-5YC"/>
+                            <constraint firstItem="tee-L9-3zX" firstAttribute="centerX" secondItem="4Fc-lC-cJP" secondAttribute="centerX" id="9i7-Kz-paO"/>
+                            <constraint firstItem="xYf-b2-LH9" firstAttribute="leading" secondItem="Oq3-53-7Zx" secondAttribute="leading" constant="147" id="FRd-qk-Avq"/>
+                            <constraint firstItem="RSf-Dh-XKS" firstAttribute="top" secondItem="tee-L9-3zX" secondAttribute="bottom" constant="74" id="FhA-VC-hgW"/>
+                            <constraint firstItem="RSf-Dh-XKS" firstAttribute="bottom" secondItem="YNo-pt-8Gh" secondAttribute="bottom" id="KLn-wC-BpI"/>
+                            <constraint firstItem="xYf-b2-LH9" firstAttribute="top" secondItem="YNo-pt-8Gh" secondAttribute="bottom" constant="47" id="LNp-qZ-oBR"/>
+                            <constraint firstItem="tee-L9-3zX" firstAttribute="top" secondItem="Oq3-53-7Zx" secondAttribute="top" constant="124" id="Ohq-FK-3CE"/>
+                            <constraint firstItem="tee-L9-3zX" firstAttribute="leading" secondItem="RSf-Dh-XKS" secondAttribute="leading" id="U37-yR-0Uh"/>
+                            <constraint firstItem="Oq3-53-7Zx" firstAttribute="trailing" secondItem="xYf-b2-LH9" secondAttribute="trailing" constant="140" id="cxj-nv-Pca"/>
+                            <constraint firstItem="YNo-pt-8Gh" firstAttribute="trailing" secondItem="RSf-Dh-XKS" secondAttribute="trailing" id="dbd-9q-1S7"/>
+                            <constraint firstItem="Oq3-53-7Zx" firstAttribute="bottom" secondItem="xYf-b2-LH9" secondAttribute="bottom" constant="301" id="gZc-t7-MD0"/>
+                            <constraint firstItem="YNo-pt-8Gh" firstAttribute="leading" secondItem="RSf-Dh-XKS" secondAttribute="leading" id="oDf-n5-NcE"/>
+                            <constraint firstItem="tee-L9-3zX" firstAttribute="trailing" secondItem="YNo-pt-8Gh" secondAttribute="trailing" id="ohs-0D-lwa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up" catalog="system" id="dRn-F0-Bj6"/>
+                    <connections>
+                        <outlet property="commentText" destination="YNo-pt-8Gh" id="xYn-ct-UqC"/>
+                        <outlet property="imageView" destination="tee-L9-3zX" id="kRD-ab-NMr"/>
+                        <outlet property="uploadButton" destination="xYf-b2-LH9" id="2wg-P1-Fq1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JF5-hy-Fsy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="490"/>
+            <point key="canvasLocation" x="808.69565217391312" y="489.50892857142856"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Mds-Gi-D2A">
