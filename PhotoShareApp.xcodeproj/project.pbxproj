@@ -18,6 +18,7 @@
 		42DB771C28EF303A00392820 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB771B28EF303A00392820 /* UploadViewController.swift */; };
 		42DB771E28EF304700392820 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB771D28EF304700392820 /* SettingsViewController.swift */; };
 		42DB772228F826DC00392820 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB772128F826DC00392820 /* Post.swift */; };
+		42DB772528F96B0700392820 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB772428F96B0700392820 /* FeedCell.swift */; };
 		CCF2C5744E4E588DF1F9B737 /* Pods_PhotoShareApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B0FB745288D2FAE31F2A0B /* Pods_PhotoShareApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		42DB771B28EF303A00392820 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		42DB771D28EF304700392820 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		42DB772128F826DC00392820 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		42DB772428F96B0700392820 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		AD99E4FC80BDE79A0BB76938 /* Pods-PhotoShareApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShareApp.debug.xcconfig"; path = "Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F7FB6AA8CDBB411F4A653892 /* Pods-PhotoShareApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoShareApp.release.xcconfig"; path = "Target Support Files/Pods-PhotoShareApp/Pods-PhotoShareApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				42DB771D28EF304700392820 /* SettingsViewController.swift */,
 				42DB771928EF301600392820 /* FeedViewController.swift */,
 				42DB770028EEB45E00392820 /* AppDelegate.swift */,
+				42DB772428F96B0700392820 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				42DB770128EEB45E00392820 /* AppDelegate.swift in Sources */,
 				42DB771A28EF301600392820 /* FeedViewController.swift in Sources */,
 				42DB770328EEB45E00392820 /* SceneDelegate.swift in Sources */,
+				42DB772528F96B0700392820 /* FeedCell.swift in Sources */,
 				42DB772228F826DC00392820 /* Post.swift in Sources */,
 				42DB771E28EF304700392820 /* SettingsViewController.swift in Sources */,
 			);
